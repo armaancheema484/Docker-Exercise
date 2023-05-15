@@ -26,6 +26,9 @@ RUN curl -O http://mgltools.scripps.edu/downloads/downloads/tars/releases/REL1.5
     && rm -rf *.gz \
     && echo "source /app/mgltools_x86_64Linux2_1.5.6/initMGLtools.sh" >> ~/.bashrc
 
+ENV DISPLAY=:0
+ENV TZ=UTC
+
 ENV PATH="/app/mgltools_x86_64Linux2_1.5.6/bin:${PATH}"
 
 ENTRYPOINT ["python", "dlscore.py"]
