@@ -23,7 +23,7 @@ For running Pycharm we open a new terminal and type in:
 ```dockerfile
 docker exec -it <container_name> /bin/bash
 ```
-and then typing
+and then typing this to launch pycharm
 ```dockerfile
-pycharm.sh to launch Pycharm
+pycharm.sh
 ```
